@@ -18,33 +18,9 @@ const Footer = () => {
       >
         {isDark ? `Light` : `Dark`}
       </button>
-      Copyright &copy; {new Date().getFullYear()}. All rights reserved.
+      Kyle Grover &copy; {new Date().getFullYear()}. All rights reserved. | Built with <Link aria-label="Link to the website framework" href="https://www.gatsbyjs.org">Gatsby</Link> & <Link aria-label="Link to the hosting platform" href="https://www.netlify.com">Netlify</Link>
       <br />
-      <Flex
-        sx={{
-          justifyContent: `center`,
-          alignItems: `center`,
-          mt: 3,
-          color: `text`,
-          fontWeight: `semibold`,
-          a: { color: `text` },
-        }}
-      >
-        <img width="30" height="30" src="https://img.lekoarts.de/gatsby/logo_w30.png" alt="LekoArts Logo" />
-        {` `}
-        <Link
-          aria-label="Link to the theme's GitHub repository"
-          sx={{ ml: 2 }}
-          href="https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-cara"
-        >
-          Theme
-        </Link>
-        <div sx={{ mx: 1 }}>by</div>
-        {` `}
-        <Link aria-label="Link to the theme author's website" href="https://www.lekoarts.de/en">
-          LekoArts
-        </Link>
-      </Flex>
+      Previous versions of my website: <Link aria-label="Link to the 2019 archive of this website" href="https://2019.kylegrover.com">2017</Link> | <Link aria-label="Link to the 2019 archive of this website" href="https://2019.kylegrover.com">2018</Link>
     </Box>
   )
 }
