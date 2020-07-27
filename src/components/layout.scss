@@ -1,0 +1,61 @@
+/* neuton-300 - latin */
+@font-face {
+    font-family: 'Neuton';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../../static/font/neuton/neuton-v12-latin-300.eot'); /* IE9 Compat Modes */
+    src: local('Neuton Light'), local('Neuton-Light'),
+         url('../../static/font/neuton/neuton-v12-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../static/font/neuton/neuton-v12-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../static/font/neuton/neuton-v12-latin-300.woff') format('woff'), /* Modern Browsers */
+         url('../../static/font/neuton/neuton-v12-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../static/font/neuton/neuton-v12-latin-300.svg#Neuton') format('svg'); /* Legacy iOS */
+}
+/* neuton-regular - latin */
+@font-face {
+    font-family: 'Neuton';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../static/font/neuton/neuton-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Neuton Regular'), local('Neuton-Regular'),
+         url('../../static/font/neuton/neuton-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../static/font/neuton/neuton-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../static/font/neuton/neuton-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../../static/font/neuton/neuton-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../static/font/neuton/neuton-v12-latin-regular.svg#Neuton') format('svg'); /* Legacy iOS */
+}
+/* neuton-italic - latin */
+@font-face {
+    font-family: 'Neuton';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../../static/font/neuton/neuton-v12-latin-italic.eot'); /* IE9 Compat Modes */
+    src: local('Neuton Italic'), local('Neuton-Italic'),
+         url('../../static/font/neuton/neuton-v12-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../static/font/neuton/neuton-v12-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../static/font/neuton/neuton-v12-latin-italic.woff') format('woff'), /* Modern Browsers */
+         url('../../static/font/neuton/neuton-v12-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../static/font/neuton/neuton-v12-latin-italic.svg#Neuton') format('svg'); /* Legacy iOS */
+}
+/* neuton-700 - latin */
+@font-face {
+    font-family: 'Neuton';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../../static/font/neuton/neuton-v12-latin-700.eot'); /* IE9 Compat Modes */
+    src: local('Neuton Bold'), local('Neuton-Bold'),
+         url('../../static/font/neuton/neuton-v12-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../static/font/neuton/neuton-v12-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../static/font/neuton/neuton-v12-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../../static/font/neuton/neuton-v12-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../static/font/neuton/neuton-v12-latin-700.svg#Neuton') format('svg'); /* Legacy iOS */
+}
+
+body {
+    font-family: 'Neuton', serif;
+}
+
+h1 .small-text {
+    display: block;
+    font-size: 0.7em;
+}

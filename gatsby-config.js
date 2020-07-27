@@ -6,17 +6,32 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    // You can overwrite values here that are used for the SEO component
-    // Of course you can also add new values here to query them like usual
-    // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
+    siteTitle: `Kyle Grover`,
+    siteTitleAlt: `Kyle Grover | Web Developer & Video Artist`,
+    siteHeadline: `Kyle Grover | Web Developer & Video Artist`,
+    siteUrl: `https://kylegrover2020.netlify.app`,
+    siteDescription: `Kyle Grover's online web design, web development, and video art portfolio and blog.`,
+    siteLanguage: `en`,
+    siteImage: `/banner.jpg`,
+    author: `@kylegrover`,
+    basePath: "",
   },
-  plugins: [
+  plugins: [    
     {
-      resolve: `@lekoarts/gatsby-theme-cara`,
-      // See the theme's README for all available options
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `sections`,
+        path: `${__dirname}/src/sections`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
       options: {},
     },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-theme-ui`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -26,9 +41,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cara - @lekoarts/gatsby-theme-cara`,
-        short_name: `Cara`,
-        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        name: `Kyle Grover | Web Developer & Video Artist`,
+        short_name: `Kyle Grover`,
+        description: `Kyle Grover's online web design, web development, and video art portfolio and blog.`,
         start_url: `/`,
         background_color: `#141821`,
         theme_color: `#f6ad55`,
